@@ -28,7 +28,7 @@ console.log(z, typeof z);
 // NUMBER: NaN = `number` | NaN means (not a number)
 // STRING: undefined string
 // BOOLEAN: false `boolean`
-
+/*
 function add7(num1) {
   return num1 + 7;
 }
@@ -52,3 +52,23 @@ function lastLetter(string) {
   return string.slice(-1);
 }
 console.log(lastLetter("Javascript"));
+
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+); */
+
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to")
+);
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
